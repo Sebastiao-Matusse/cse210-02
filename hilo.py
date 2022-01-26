@@ -43,10 +43,9 @@ class deck:
 
     # Return random undrawn card from deck.
     def drawCard(self):
-        # if(self.cards.len() > 0):
-        return random.choice(self.cards)
-        # else:
-        #     return "Deck is empty!"
+        card = random.choice(self.cards)
+        self.cards.remove(card)
+        return card
 
 
 # Runs the main Hilo game. 
