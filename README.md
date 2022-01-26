@@ -6,7 +6,7 @@ Hilo is a game in which the player guesses if the next card drawn by the dealer 
 # Rules
 Hilo is played according to the following rules.
 
-The player starts the game with 300 points.
+* The player starts the game with 300 points.
 * Individual cards are represented as a number from 1 to 13.
 * The current card is displayed.
 * The player guesses if the next one will be higher or lower.
