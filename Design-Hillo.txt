@@ -1,0 +1,16 @@
+This is the design of the Hillo game we are creating.
+
+The game will have two classes:
+    class Player:
+        which will have the following attribute:
+            points
+        and the the following methods
+            addpoints: will add points to the Player score
+            takepoints: will take points from the player score
+            getpoints: return the playes's score
+    class card deck:
+        Attributes:
+            card_dict
+        Methods:
+            draw_card: draw a card and marks as drawn
+    
