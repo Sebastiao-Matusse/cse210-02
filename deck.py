@@ -2,19 +2,24 @@
 import random
 
 class deck:
-    # Dictionary for each card face as key,
-    # value is bool for 'has the card been drawn?'
-    cards = {'Ace':false, '2':false, '3':false,
-            '4':false, '5':false, '6':false,
-            '7':false, '8':false, '9':false,
-            '10':false, 'Jack':false, 'Queen':false,
-            'King':false}
+    # Suite is a standard group of 13 cards,
+    # these can be added to the deck to increase or lower the number of cards in play.
+    suite = ['Ace', '2', '3',
+            '4', '5', '6',
+            '7', '8', '9',
+            '10', 'Jack', 'Queen',
+            'King']
+    cards = []
+
+    # Fills cards[] with a number of suites (4 by default)
+    def __init__(self, num_suites = 4):
+        for(i in range(0, num_suites)):
+            for(card in suite):
+                cards.append(card)
 
     # Return random undrawn card from deck.
-    def drawCard():  
-        card, drawn = random.choice([cards.items()])
-        if(not drawn):
-            return card
+    def drawCard():
+        if(cards.len() > 0):
+            return random.choice(cards)
         else:
-            
-        
+            return "Deck is empty!"
