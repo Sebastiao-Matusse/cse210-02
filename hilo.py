@@ -17,7 +17,7 @@ class Deal:
         self.cards.append(random.randrange(1, 20))
 
 class HiLo:
-    """Controls the Game"""
+    """Controls """
 
     def play(self):
         deal = Deal()
@@ -31,7 +31,7 @@ class HiLo:
             deal.new_card()
             deal.compare(turn)
             print(f"Your score is: ", deal.score)
-            playing = deal.score > 0 and input("Keep playing? [y/n] ") in ('y')
+            playing = deal.score > 0 and input("Keep playing? [y/n] ") in ('y') 
 
 
 
